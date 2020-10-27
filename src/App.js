@@ -4,7 +4,7 @@ import alanBtn from "@alan-ai/alan-sdk-web";
 import NewsCards from "./components/NewsCards/NewsCards";
 import useStyles from "./styles";
 import wordsToNumbers from "words-to-numbers"
-
+import dotenv from "dotenv";
 /**
  *
  * const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop - 80);
@@ -15,6 +15,8 @@ import wordsToNumbers from "words-to-numbers"
  *
  * ref={myRef}
  */
+
+ dotenv.config();
 
 function App() {
   const classes = useStyles();
